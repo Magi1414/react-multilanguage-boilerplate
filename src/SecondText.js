@@ -1,16 +1,18 @@
-import changeLanguage from './changeLanguage';
+import React from 'react';
+import MultipleTexts from './MultipleTexts'
 
 
-const FirstText = props => {
+const SecondText = () => {
 
-  let language = props.language;
+ return (
+   <MultipleTexts 
+   frenchT="J'habite à Paris"
+   englishT="I live in Texas"
+   germanT="Ich wohne in Berlin"
+   />
+ )
 
-    let dictionary = {
-    french: "J'habite à Paris",
-    english: "I live in New York",
-    german: "Ich wohne in Berlin"
-  }
-  return dictionary[language]
+  
 }
 
-export default changeLanguage(FirstText)
+export default SecondText;
