@@ -6,10 +6,11 @@ const changeLanguage = Component =>
     render() {
       return (
         <LanguageContext.Consumer>
-          {(language) =>
+          {(language) => 
             <Component
               { ...this.props }
-              language={language.language}
+              languages={language.languages}
+              chosenLanguage={language.chosenLanguage}
               updateLanguage={language.updateLanguage}
             />
           }

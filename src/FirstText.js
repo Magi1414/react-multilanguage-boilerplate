@@ -1,14 +1,14 @@
 import React from 'react';
-import MultipleTexts from './MultipleTexts'
+import MultipleTexts from './MultipleTexts';
 
-
-const FirstText = () => {
+const FirstText = (props) => {
 
  return (
+   
    <MultipleTexts 
-   frenchT="Bonjour, Je m'appele Claude"
-   englishT="Hello my name is John"
-   germanT="Hallo, ich heiße Johann"
+   french="Bonjour, Je m'appele Claude"
+   english="Hello my name is John"
+   german="Hallo, ich heiße Johann"
    />
  )
 

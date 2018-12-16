@@ -5,17 +5,18 @@ class LanguageProvider extends Component {
 
 
   state = {
-    language: 'french'
+    chosenLanguage: 'french'
   }
 
-  updateLanguage = e => this.setState({ language: e.target.value });
+  updateLanguage = e => this.setState({ chosenLanguage: e.target.value });
 
   render () {
 
 
     return (
       <LanguageContext.Provider value={{
-        language: this.state.language,
+        chosenLanguage: this.state.chosenLanguage,
+        languages: this.state.languages,
         updateLanguage: this.updateLanguage
       }}>
         {this.props.children}

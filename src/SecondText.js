@@ -6,9 +6,9 @@ const SecondText = () => {
 
  return (
    <MultipleTexts 
-   frenchT="J'habite à Paris"
-   englishT="I live in Texas"
-   germanT="Ich wohne in Berlin"
+   french="J'habite à Paris"
+   english="I live in Texas"
+   german="Ich wohne in Berlin"
    />
  )
 

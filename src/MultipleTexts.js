@@ -2,17 +2,22 @@ import React from 'react';
 import changeLanguage from './changeLanguage';
 
 
-const MultipleTexts = props => {
+class MultipleTexts extends React.Component {
 
-  let language = props.language;
-  const {frenchT, englishT, germanT} = props;
-
-  let mainText = {
-        french: frenchT,
-        english: englishT,
-        german: germanT
-      }
-  return mainText[language]
+  render() {
+   
+    const chosenLanguage = this.props.chosenLanguage 
+    const {french, english, german } = this.props
+    
+  
+    let mainText = { 
+      french,
+      english,
+      german
+     }
+ 
+    return mainText[chosenLanguage]
+  }
 }
 
 export default changeLanguage(MultipleTexts)
